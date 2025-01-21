@@ -1353,9 +1353,7 @@ div#myTabContent {
         font-size: 18px;
     }
 
-    .course_contents {
-        padding: 15px;
-    }
+    .d_syllabus a{margin-bottom:30px; text-align:center;}
 
     .banner_title h1 {
         font-size: 28px;
@@ -1534,7 +1532,7 @@ div#myTabContent {
 
     .batchdate {
         width: 28%;
-        font-size: 12px;
+        font-size: 10px;
         margin: 0 5px;
     }
 
@@ -1546,7 +1544,7 @@ div#myTabContent {
 
     .batchday {
         width: 40%;
-        font-size: 13px;
+        font-size: 11px;
         line-height: 15px;
         margin: 0 5px;
     }
@@ -1930,3 +1928,28 @@ section.fixed_request {
 .course_contents h2 { position: relative; font-size:25px; color:#333;}
 .course_contents h3 { position: relative; font-size:25px; color:#333;}
 .course_contents p{color:#333; font-size:14px;}
+
+@media screen and (max-width: 767px) {
+.inner_banner .elementor-widget-container .wp-image-609{top:-50px;}
+.elementor-widget-container img { width: 100px; height: 100px; }
+.inner_banner{height:auto;}
+.bannershow{padding:0px;}
+.banner_title p{font-size:13px; line-height: 23px;}
+.banner_title h1{margin-bottom:0px;}
+
+.overallfeature{display:block;}
+
+.m_tottal{margin: 0px 0;}
+.m_tottal .m_course_right p{margin-bottom:0px;line-height: normal; padding:0;}
+.mdis_tottal .m_course_right p{margin-bottom:0px;line-height: normal; padding:0;}
+.mamount_tottal .m_course_right p{margin-bottom:0px;line-height: normal; padding:0;}
+
+.request_batch .req_right h3{font-size:18px;}
+.batch_schedule{padding-bottom:20px;}
+.batch_schedule .batch_title h2{font-size:20px;}
+
+.course_contents h2{font-size: 20px; margin-bottom:10px;}
+.course_contents h3{font-size: 18px; margin-bottom:10px;}
+
+.course_contents_Sec{padding-top:0px; padding-bottom:30px;}
+}

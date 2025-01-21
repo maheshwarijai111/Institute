@@ -110,20 +110,12 @@
 
 
         @media screen and (max-width: 768px) {
-            .tabs {
-                flex-direction: column;
-            }
-
-            .tab-buttons {
-                width: 100%;
-                height: auto;
-                background-color: rgba(1, 4, 9, 0.75);
-                backdrop-filter: blur(8px);
-            }
-
-            .tab-contents {
-                width: 100%;
-            }
+            .tab-contents{padding: 20px 0px 20px 0px!important;}
+.tab-content ul{}
+.tab-content ul li{margin-right: 0px;width: 50%; margin-bottom:0px;}
+.tabs { flex-direction: column; } 
+.tab-buttons { width: 100%; height: auto; backdrop-filter: blur(8px); flex-direction: row; overflow-x: scroll; } 
+.tab-contents { width: 100%; }
         }
     </style>
 

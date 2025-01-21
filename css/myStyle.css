@@ -813,14 +813,16 @@ header.nav-up { position: fixed; top: 0; transition: top 0.2s ease-in-out; right
 .yellow_box p { margin: auto; font-size: 14px; font-style: italic; } 
 
 
-.inner_banner{position:relative;height: 290px; display: flex ; place-items: center; justify-content: center; background: #f1f1f1;}
+.inner_banner{position:relative;height: 290px; display: flex ;    overflow: hidden; place-items: center; justify-content: center; background: #f1f1f1;}
 .inner_banner_course{height:auto;}
 .inner_banner_course .row{display:flex; place-items:center;}
 .inner_banner .breadcrumb{place-items: center; position: absolute; left: 0; right: 0; margin: auto; justify-content: center; bottom: 50px; z-index: 99;}
 .inner_banner .breadcrumb h1{margin-top: 0; margin-bottom: 0; font-size: 45px; color: #333; font-weight: 500; width:100%; text-align:center;}
 .inner_banner .breadcrumb .breadcrumb-listItem{}
-.inner_banner .breadcrumb-listItem span{}
-.inner_banner .breadcrumb-listItem span a{}
+.inner_banner .breadcrumb-listItem span{display: contents;}
+.inner_banner .breadcrumb-listItem span a{margin-right: 10px; position:relative;}
+.inner_banner .breadcrumb-listItem span a:after{content:''; position:absolute; bottom:0; top:0; right:-10px; border:1px solid; width:auto; height:auto;}
+
 .inner_banner .breadcrumb-listItem span span{position: relative; top: 7px; font-size: 20px; left: 15px;}
 .inner_banner .elementor-widget-container{position:absolute; top:0; bottom:0; left:0; right:0;}
 .inner_banner .elementor-widget-container .wp-image-609{position: absolute; bottom: 0; top: 50px;}
@@ -828,6 +830,13 @@ header.nav-up { position: fixed; top: 0; transition: top 0.2s ease-in-out; right
 .inner_banner .elementor-widget-container .wp-image-607{position: absolute; bottom: 0; right:0;}
 .inner_banner .elementor-widget-container .wp-image-10876{position: absolute; bottom: 0;}
 .elementor-widget-container img{width:auto;}
+
+.about_sections { padding: 50px 0px; position: relative; z-index: 9999; background: #fff; }
+.about_sections h4 { font-size: 22px; }
+.about_sections p { font-size: 15px; margin-bottom:35px;}
+
+
+
 
 
 .course_sec{padding:50px 0px;}
@@ -848,6 +857,29 @@ header.nav-up { position: fixed; top: 0; transition: top 0.2s ease-in-out; right
 
 
 .content_widgets{padding:50px 0px;}
+
+@media screen and (max-width: 767px) {
+.elementor-widget-container img { width: 80px; height: 80px; }
+.inner_banner .elementor-widget-container .wp-image-609{top:-50px;}
+.inner_banner .elementor-widget-container .wp-image-10876{bottom:-50px;}
+.inner_banner .elementor-widget-container .wp-image-607{bottom:-50px;}
+.inner_banner .elementor-widget-container .wp-image-10875{bottom:-50px;}
+.inner_banner{height:150px;}
+.inner_banner .breadcrumb h1{font-size:25px;}
+.inner_banner .breadcrumb-listItem span span{left:0; font-size: 18px;}
+.inner_banner .breadcrumb-listItem span a{position:relative;}
+.inner_banner .breadcrumb-listItem span a:after{content:''; position:absolute; bottom:0; top:0; right:-10px; border:1px solid; width:auto; height:auto;}
+
+.about_sections{padding:30px 0px;}
+.about_sections h4{font-size:20px;}
+.about_sections p{font-size:13px;}
+.about_sections ul li{font-size:13px;}
+
+
+
+
+
+}
 
 
 
